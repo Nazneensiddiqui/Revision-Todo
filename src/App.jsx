@@ -4,6 +4,8 @@ import { bgcolor } from "./Slices/colorSlice";
 import { useState } from "react";
 import { bgchange } from "./Slices/bgcolorSlice";
 import { AddTask,DeletTask,Complited,UnComplited,EditTask } from "./Slices/TodoSlice";
+import v1 from "./vedio/v1.mp4"
+import v2 from "./vedio/prod.mp4"
 
 
 const App=()=>{
@@ -111,7 +113,13 @@ return(
      </thead>
       </table>
     </div>
-   
+    <video controls>
+                <source src={v1} />
+            </video>
+            <div>
+              <video controls width="600px" height="400px">
+            <source src={v2}/>
+         </video></div>
     </center> 
     </>
   )
